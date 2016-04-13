@@ -1,0 +1,19 @@
+/*
+This is an example loadout provided by Murph.
+ player forceAddUniform "U_O_Wetsuit";
+ player addVest "V_PlateCarrierGL_blk";
+ player addHeadgear "H_HelmetLeaderO_ocamo";
+ player addWeapon "Rangefinder";
+ [player,"MMG_01_hex_F",4] call BIS_fnc_addWeapon;
+ {    player addItem _x;   } forEach ["Exile_Item_DuctTape","Exile_Item_DuctTape","Exile_Item_DuctTape","Exile_Item_InstaDoc","Exile_Item_InstaDoc","Exile_Item_InstaDoc","Exile_Item_Matches","Exile_Item_PlasticBottleFreshWater","Exile_Item_PlasticBottleFreshWater","Exile_Item_PlasticBottleFreshWater","Exile_Item_PlasticBottleFreshWater","Exile_Item_PlasticBottleFreshWater","Exile_Item_BBQSandwich_Cooked","Exile_Item_BBQSandwich_Cooked","Exile_Item_BBQSandwich_Cooked","Exile_Item_BBQSandwich_Cooked","Exile_Item_BBQSandwich_Cooked","optic_Hamr"];
+ {    player linkItem _x;   } forEach ["ItemGPS","NVGoggles_INDEP"];
+ {player addPrimaryWeaponItem _x} forEach ["muzzle_snds_93mmg","acc_pointer_IR","optic_KHS_blk","bipod_01_F_blk"];
+
+
+// hint format["%1, You have spawned with your loadout.", name _bambiPlayer];
+
+
+[] spawn {sleep 30; systemchat ("You have loaded into Stealth Gamers Exile Altis, enjoy!")};
+[] spawn {sleep 35; systemchat ("teamspeak ip: ts.stealthgamers.net")};
+[] spawn {sleep 40; systemchat ("website url: stealthgamers.net")};
+*/

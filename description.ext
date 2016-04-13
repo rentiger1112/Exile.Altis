@@ -1,0 +1,194 @@
+// https://community.bistudio.com/wiki/Description.ext#forceRotorLibSimulation
+forceRotorLibSimulation = 2;
+
+// https://community.bistudio.com/wiki/Description.ext#disableChannels
+disableChannels[] = {0, 2};
+
+author = "Exile Mod Team";
+loadScreen = "img\logo.paa";
+onLoadMission= "www.stealthgamers.net";
+OnLoadIntro = "";
+OnLoadIntroTime = false;
+OnLoadMissionTime = false;
+onLoadName = "Exile Mod";
+
+class Header
+{
+	gameType = Sandbox;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+class RscTitles
+{
+	#include "scripts\statusBar\statusBar.hpp"
+
+	    class wm_disp {
+        idd = -1;
+        onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
+        fadein = 0;
+        fadeout = 0;
+        duration = 10e10;
+        controlsBackground[] = {};
+        objects[] = {};
+        class controls {
+            class wm_text2 {
+                idc = 1;
+                x = safeZoneX+0.027;//safeZoneW*0.01;
+                y = safeZoneY+safeZoneH-0.16;
+                w = 0.151*safeZoneH;
+                h = 0.057*safeZoneH;
+                shadow = 2;
+                class Attributes
+                {
+                    font = "EtelkaNarrowMediumPro";
+                    color = "#24FFFFFF";
+                    align = "left";
+                    valign = "middle";
+                    shadow = 2;
+                };
+                colorBackground[] = { 1, 0.3, 0, 0 };
+                font = "EtelkaNarrowMediumPro";
+                size = 0.06*safeZoneH;
+                type = 13;
+                style = 0;
+                text="";
+            };
+        };
+    };
+};
+
+#include "scripts\CHVD\dialog.hpp"
+
+class cfgFunctions
+{
+	#include "scripts\ExHP\config.cpp"
+	#include "scripts\CHVD\CfgFunctions.hpp"
+	#include "ExileClient_Custom\CfgFunctions.hpp"
+};
+
+
+// DO NOT CHANGE THIS! +
+showHUD[] =
+{
+    true,   // Scripted HUD (same as showHUD command)
+    true,   // Vehicle + soldier info
+    true,   // Vehicle radar
+    true,   // Vehicle compass
+    true,   // Tank direction indicator
+    true,   // Commanding menu
+    false,   // Group Bar
+    true    // HUD Weapon Cursors
+};
+
+class CfgNotifications
+{
+  class Success
+  {
+      description = "%1";
+      title = "Success";
+      iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+      iconText = "";
+      color[] = {0.7, 0.93, 0, 1};
+      duration = 5;
+      priority = 0;
+      difficulty[] = {};
+  };
+  class Whoops
+  {
+      description = "%1";
+      title = "Error";
+      iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+      iconText = "";
+      color[] = {0.7, 0.93, 0, 1};
+      duration = 5;
+      priority = 0;
+      difficulty[] = {};
+  };
+	class ZCP_Init
+	{
+			description = "%1";
+			title = "ZCP Spawned";
+			iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+			iconText = "";
+			color[] = {0.7, 0.93, 0, 1};
+			duration = 5;
+			priority = 0;
+			difficulty[] = {};
+	};
+	class ZCP_Capped
+	{
+		description = "%1";
+		title = "ZCP Capped";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		iconText = "";
+		color[] = {0.7, 0.93, 0, 1};
+		duration = 5;
+		priority = 0;
+		difficulty[] = {};
+	};
+	class ZCP_Capping
+	{
+		description = "%1";
+		title = "ZCP alert";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		iconText = "";
+		color[] = {0.7, 0.93, 0, 1};
+		duration = 5;
+		priority = 0;
+		difficulty[] = {};
+	};
+};
+
+respawn = "BASE";
+respawnDelay = 120;
+respawnDialog = 0;
+respawnOnStart = 0;
+respawnButton = 1;
+respawnTemplates[] = {"Exile"};
+
+// These are broken as fuck, do not use them!
+corpseManagerMode = 0;
+corpseLimit = 20;
+corpseRemovalMinTime = 1800;
+corpseRemovalMaxTime = 3600;
+wreckManagerMode = 0;
+wreckLimit = 2;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 360;
+// DO NOT CHANGE THIS! -
+
+// When scripted player is enabled, game no longer shows "No player select" error message upon mission start when no player unit is present.
+scriptedPlayer = 1;
+
+// Automatically take a free slot in lobby
+joinUnassigned = 0;
+
+// Removes all playable units which do not have a human player.
+disabledAI = true;
+
+// Disable dropping items while swimming
+enableItemsDropping = 1;
+
+// Briefing will still be displayed until all clients are connected and done loading :(
+briefing = 0;
+
+// Defines if the debriefing is shown or not at the end of the mission.
+debriefing = 0;
+
+// Allow RPT loging
+allowFunctionsLog = 1;
+
+// Allows access to the Debug Console outside of the editor during normal gameplay.
+// 0 = Default behavior, available only in editor
+// 1 = Available in SP and for hosts / logged in admins
+// 2 = Available for everyone
+enableDebugConsole = 1; // 2 = dangerous in MP
+
+// NO NO NO
+allowFunctionsRecompile = 0;
+
+#include "config.cpp"
+#include "CLS\CLS.hpp"
+#include "CfgRemoteExec.hpp"
+#include "infiSTAR_Exile_AdminMenu.hpp"
