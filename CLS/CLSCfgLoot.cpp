@@ -48,7 +48,7 @@ class CLSCfgLootTable
 	{"CUP_6Rnd_45ACP_M"}
 		};
 	};
-	
+
 	class CUP_arifle_AK
 	{
 		itemType = "weapon";
@@ -487,7 +487,7 @@ class CUP_arifle_FNFAL
 		};
 	};
 
-	class CUP_SNIPER_VSS
+	class CUP_SNIPER_AS50
 	{
 			itemType = "weapon";
 			items[] = {
@@ -539,7 +539,7 @@ class CUP_arifle_FNFAL
 		};
 	};
 
-	class CUP_SGUN_M1014
+	class CUP_SGUN_SAIGA
 	{
 			itemType = "weapon";
 			items[] = {

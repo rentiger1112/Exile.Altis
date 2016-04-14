@@ -43,8 +43,8 @@ APOC_AA_Drops =[
 			["Food (large)",		"airdrop_FoodLarge",			5000, "supply"]
 		]
 	],
-		
-		["Building Supplies",
+
+	["Building Supplies",
 		[
 			["Small pack", 		"airdrop_SupplySmall", 				100000, "supply"],
 			["Medium pack", 	"airdrop_SupplyMedium", 			250000, "supply"],
@@ -92,13 +92,15 @@ APOC_AA_Drop_Contents =[
 			["itm", ["muzzle_snds_338_black", "muzzle_snds_338_sand", "muzzle_snds_93mmg"], 2]
 		]
 	],
-	
+
 	["airdrop_SupplySmall",
 		[
 			["itm", ["Item_Item_Codelock","Exile_Item_ExtensionCord","Exile_Item_Foolbox"], 1],
 			["itm", ["Exile_Item_DuctTape","Exile_Item_JunkMetal","Exile_Item_Hammer"], 1],
 			["itm", ["Exile_Item_CamoTentKit","Exile_Item_Cement","Exile_Item_Sand"], 1],
-			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 1]
+			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 1],
+			["itm", ["V_PlateCarrierIAGL_dgtl", "V_TacVest_camo", "V_PlateCarrierGL_rgr"], 2],
+			["bac", ["B_Carryall_mcamo", "B_Kitbag_mcamo"], 2]
 		]
 	],
 
@@ -107,7 +109,9 @@ APOC_AA_Drop_Contents =[
 			["itm", ["Item_Item_Codelock","Exile_Item_ExtensionCord","Exile_Item_Foolbox"], 3],
 			["itm", ["Exile_Item_DuctTape","Exile_Item_JunkMetal","Exile_Item_Hammer"], 3],
 			["itm", ["Exile_Item_CamoTentKit","Exile_Item_Cement","Exile_Item_Sand"], 3],
-			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 3]
+			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 3],
+			["itm", ["V_PlateCarrierIAGL_dgtl", "V_TacVest_camo", "V_PlateCarrierGL_rgr"], 2],
+			["bac", ["B_Carryall_mcamo", "B_Kitbag_mcamo"], 2]
 		]
 	],
 
@@ -116,7 +120,9 @@ APOC_AA_Drop_Contents =[
 			["itm", ["Item_Item_Codelock","Exile_Item_ExtensionCord","Exile_Item_Foolbox"], 5],
 			["itm", ["Exile_Item_DuctTape","Exile_Item_JunkMetal","Exile_Item_Hammer"], 5],
 			["itm", ["Exile_Item_CamoTentKit","Exile_Item_Cement","Exile_Item_Sand"], 5],
-			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 5]
+			["itm", ["Exile_Container_Safe","Exile_Container_Storagecrate"], 5],
+			["itm", ["V_PlateCarrierIAGL_dgtl", "V_TacVest_camo", "V_PlateCarrierGL_rgr"], 2],
+			["bac", ["B_Carryall_mcamo", "B_Kitbag_mcamo"], 2]
 		]
 	],
 

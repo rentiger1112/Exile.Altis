@@ -31,7 +31,7 @@ if(hasInterface) then{
 };
 
 
-[] execVM "scripts\APOC_Airdrop_Assistance\init.sqf"; //Airdrop System
+[] execVM "scripts\APOC_Airdrop_Assistance\init.sqf";
 [] execVM "scripts\statusBar\statusbar.sqf";
 [] execVM "scripts\ZCP\zcp.sqf";
 [] execVm "apps\ExileSecurity\Init.sqf";
