@@ -1,53 +1,64 @@
 class CLSCfgLootTable
 {
 
-	class CUP_AMMO
+	class CUP_AMMO_556
 	{
 	itemType = "magazine";
 	items[] = {
-	{"CUP_20Rnd_762x51_FNFAL_M"},
-	{"CUP_30Rnd_Sa58_M"},
-	{"CUP_30Rnd_Sa58_M_TracerG"},
-	{"CUP_30Rnd_Sa58_M_TracerR"},
-	{"CUP_30Rnd_Sa58_M_TracerY"},
-	{"CUP_20Rnd_762x51_B_SCAR"},
-	{"CUP_20Rnd_TE1_White_Tracer_762x51_SCAR"},
-	{"CUP_20Rnd_TE1_Yellow_Tracer_762x51_SCAR"},
-	{"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR"},
-	{"CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR"},
-	{"CUP_20Rnd_762x51_CZ805B"},
-	{"CUP_20Rnd_TE1_Red_Tracer_762x51_CZ805B"},
-	{"CUP_20Rnd_TE1_Yellow_Tracer_762x51_CZ805B"},
-	{"CUP_20Rnd_TE1_Green_Tracer_762x51_CZ805B"},
-	{"CUP_20Rnd_TE1_White_Tracer_762x51_CZ805B"},
-	{"CUP_20Rnd_556x45_Stanag"},
-	{"CUP_30Rnd_556x45_Stanag"},
-	{"CUP_30Rnd_556x45_G36"},
-	{"CUP_30Rnd_TE1_Red_Tracer_556x45_G36"},
-	{"CUP_30Rnd_TE1_Green_Tracer_556x45_G36"},
-	{"CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36"},
-	{"CUP_100Rnd_556x45_BetaCMag"},
-	{"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag"},
-	{"CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag"},
-	{"CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag"},
 	{"CUP_30Rnd_545x39_AK_M"},
 	{"CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"},
 	{"CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M"},
 	{"CUP_30Rnd_TE1_White_Tracer_545x39_AK_M"},
-	{"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M"},
-	{"CUP_30Rnd_762x39_AK47_M"},
-	{"CUP_7Rnd_45ACP_1911"},
-	{"CUP_10Rnd_9x19_Compact"},
-	{"CUP_18Rnd_9x19_Phantom"},
-	{"CUP_15Rnd_9x19_M9"},
-	{"CUP_17Rnd_9x19_glock17"},
-	{"CUP_8Rnd_9x18_Makarov_M"},
-	{"CUP_20Rnd_B_765x17_Ball_M"},
-	{"CUP_30Rnd_9x19_UZI"},
-	{"CUP_8Rnd_9x18_MakarovSD_M"},
-	{"CUP_6Rnd_45ACP_M"}
+	{"CUP_30Rnd_TE1_Yellow_Tracer_545x39_AK_M"}
 		};
 	};
+
+class CUP_AMMO_762
+{
+	itemType = "magazine";
+	items[] = {
+		{"CUP_20Rnd_762x51_FNFAL_M"},
+		{"CUP_20Rnd_762x51_B_SCAR"},
+		{"CUP_20Rnd_TE1_White_Tracer_762x51_SCAR"},
+		{"CUP_20Rnd_TE1_Yellow_Tracer_762x51_SCAR"},
+		{"CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR"},
+		{"CUP_20Rnd_TE1_Green_Tracer_762x51_SCAR"},
+		{"CUP_20Rnd_762x51_CZ805B"},
+		{"CUP_20Rnd_TE1_Red_Tracer_762x51_CZ805B"},
+		{"CUP_20Rnd_TE1_Yellow_Tracer_762x51_CZ805B"},
+		{"CUP_20Rnd_TE1_Green_Tracer_762x51_CZ805B"},
+		{"CUP_20Rnd_TE1_White_Tracer_762x51_CZ805B"},
+		{"CUP_30Rnd_762x39_AK47_M"}
+	};
+};
+
+	class CUP_AMMO_SA58
+{
+	itemType = "magazine";
+	items[] = {
+{"CUP_30Rnd_Sa58_M"},
+{"CUP_30Rnd_Sa58_M_TracerG"},
+{"CUP_30Rnd_Sa58_M_TracerR"},
+{"CUP_30Rnd_Sa58_M_TracerY"}
+	};
+};
+
+class CUP_AMMO_HGUN
+{
+	itemType = "magazine";
+	items[] = {
+		{"CUP_7Rnd_45ACP_1911"},
+		{"CUP_10Rnd_9x19_Compact"},
+		{"CUP_18Rnd_9x19_Phantom"},
+		{"CUP_15Rnd_9x19_M9"},
+		{"CUP_17Rnd_9x19_glock17"},
+		{"CUP_8Rnd_9x18_Makarov_M"},
+		{"CUP_20Rnd_B_765x17_Ball_M"},
+		{"CUP_30Rnd_9x19_UZI"},
+		{"CUP_8Rnd_9x18_MakarovSD_M"},
+		{"CUP_6Rnd_45ACP_M"}
+	};
+};
 
 	class CUP_arifle_AK
 	{
@@ -679,7 +690,18 @@ class CUP_arifle_FNFAL
 	{
 		itemType = "item";
 		items[] = {
-		{ "Rangefinder" },{ "NVGoggles" },{ "ItemCompass" },{ "ItemWatch" },{ "ItemRadio" },{ "ItemGPS" },{ "Binocular" },{ "acc_flashlight" },{ "acc_pointer_IR" },{ "optic_MRCO" },{ "optic_DMS" },{ "optic_NVS" }
+		{ "Rangefinder" },
+		{ "NVGoggles" },
+		{ "ItemCompass" },
+		{ "ItemWatch" },
+		{ "ItemRadio" },
+		{ "ItemGPS" },
+		{ "Binocular" },
+		{ "acc_flashlight" },
+		{ "acc_pointer_IR" },
+		{ "optic_MRCO" },
+		{ "optic_DMS" },
+		{ "optic_NVS" }
 		};
 	};
 	class Medical
